@@ -68,7 +68,7 @@ namespace WebApi.Controllers
 
                 string query = @"
                                 Update dbo.Departments set DepartmentName ='" + dep.DepartmentName + @"'
-                                    where DepartmentID = " + dep.DepartmenntID + @"
+                                    where DepartmentID = " + dep.DepartmentID + @"
                                 ";
 
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["EmployeeAppDB"].ConnectionString))
